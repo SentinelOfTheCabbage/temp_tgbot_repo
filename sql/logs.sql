@@ -1,0 +1,8 @@
+CREATE TABLE logs(
+	client_id NUMERIC(13) NOT NULL,
+	phase NUMERIC(2) NOT NULL,
+	dtime TIMESTAMP NOT NULL DEFAULT CURRENT_DATE,
+	isButton BOOLEAN NOT NULL,
+	content VARCHAR(150),
+	reaction VARCHAR(50)
+);

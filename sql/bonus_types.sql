@@ -1,0 +1,7 @@
+CREATE TABLE bonus_types(
+	type_id SERIAL NOT NULL PRIMARY KEY,
+	percent NUMERIC(3) NOT NULL,
+	returns NUMERIC(5) NOT NULL
+)
+
+ALTER TABLE bonuses ADD COLUMN bonus_type SERIAL

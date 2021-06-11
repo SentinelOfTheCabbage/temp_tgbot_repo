@@ -1,0 +1,5 @@
+CREATE TABLE bonus_uses(client_id NUMERIC(13) PRIMARY KEY, bonus_type int)
+
+ALTER TABLE bonus_types ADD COLUMN max_uses int;
+
+UPDATE bonus_types SET max_uses = 1
